@@ -108,5 +108,5 @@ const balon= "baloncesto";
 function mostrarNombrebalon(){
     return balon
 }
-console.log("Mi animal favorito es: ", mostrarNombrebalon())
+console.log("Mi deporte favorito es el: ", mostrarNombrebalon())
 
