@@ -525,13 +525,13 @@ while (buclePrincipal == true){
             console.log("(5) Return to the main menu ")
             respuesta=prompt("Enter the desired option:");
             if (respuesta==1){
-                console.log(viewProducts())
+                viewProducts()
             }else if(respuesta==2){
-                console.log(deleteProduct())
+                deleteProduct()
             }else if (respuesta==3){
-                console.log(addProduct())
+                addProduct()
             }else if(respuesta==4){
-                console.log(updateProduct())
+                updateProduct()
             }else if(respuesta==5){
                 console.log("Return to the main menu ")
                 bucleProduct=false
@@ -555,13 +555,13 @@ while (buclePrincipal == true){
             console.log("(5) Return to the main menu ")
             respuesta=prompt("Enter the desired option:");
             if (respuesta==1){
-                console.log(viewSuppliers())
+                viewSuppliers()
             }else if(respuesta==2){
-                console.log(deleteSupplier())
+                deleteSupplier()
             }else if(respuesta==3){
-                console.log(addSupplier())
+                addSupplier()
             }else if(respuesta==4){
-                console.log(updateSupplier())
+                updateSupplier()
             }else if(respuesta==5){
                 console.log("Return to the main menu:");
                 menuSuppliers=false
@@ -584,13 +584,13 @@ while (buclePrincipal == true){
             console.log("(5) Return to the main menu ")
             respuesta=prompt("Enter the desired option:");
             if (respuesta==1){
-                console.log(viewOrders())
+                viewOrders()
             }else if(respuesta==2){
-                console.log(deleteOrder())
+                deleteOrder()
             }else if(respuesta==3){
-                console.log(addOrder())
+                addOrder()
             }else if(respuesta==4){
-                console.log(updateOrder())
+                updateOrder()
             }else if(respuesta==5){
                 console.log("Return to the main menu:");
                 Bucleorder=false
@@ -611,9 +611,9 @@ while (buclePrincipal == true){
             console.log("(3) Return to the main menu ")
             var respuesta=prompt("Enter the desired option:");
             if (respuesta==1){
-                console.log(checkStockLevels())
+                checkStockLevels()
             }else if(respuesta==2){
-                console.log(restockProduct())
+                restockProduct()
             }else if (respuesta==3){
                 console.log("Return to the main menu")
                 bucleStock=false
@@ -633,9 +633,9 @@ while (buclePrincipal == true){
             console.log("(3) Return to the main menu ")
             var respuesta=prompt("Enter the desired option:");
             if (respuesta==1){
-                console.log(generateSalesReport())
+                generateSalesReport()
             }else if(respuesta==2){
-                console.log(generateInventoryReport())
+                generateInventoryReport()
             }else if (respuesta==3){
                 console.log("Back to main menu")
                 bucleReporting=false
@@ -655,9 +655,9 @@ while (buclePrincipal == true){
             console.log("(3) Back to main menu")
             var respuesta=prompt("Enter the desired option:");
             if (respuesta==1){
-                console.log(searchProducts())
+                searchProducts()
             }else if(respuesta==2){
-                console.log(filterOrders())
+                filterOrders()
             }else if(respuesta==3){
                 console.log("Back to main menu")
                 bucleFilter=false
