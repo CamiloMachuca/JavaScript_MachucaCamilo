@@ -9,13 +9,44 @@
 </head>
 
 <body>
-    <div id="contenedor1">
-        <h1>Menu Principal</h1>
-        <button id="button1">(1) products</button>
-        <button id="button2">(2) suppliers </button>
-        <button id="button3">(3) orders</button>
+
+    <div id="menuPrincipal">
+        <div id="contenedor1">
+            <h1>Menu Principal</h1>
+            <button id="button1">products</button>
+            <button id="button2">suppliers </button>
+            <button id="button3">orders</button>
+        </div>
+    </div>
+    <div id="menuProductsHtml"></div>
+    <div id="NuevoProduct">
+        <h1 id="titulo">Añadir nuevo Producto</h1>
+        <label for="productId">Id:</label>
+        <input type="number" id="productId">
+        <label for="productName">Nombre:</label>
+        <input type="text" id="productName">
+        <label for="productCategory">Categoría:</label>
+        <input type="text" id="productCategory">
+        <label for="productPrice">Precio:</label>
+        <input type="number" id="productPrice">
+        <label for="productSupplierId">Id del proveedor:</label>
+        <input type="number" id="productSupplierId">
+        <button id="Añadirr">Añadir</button>
+        <button id="Regresar">Regresar</button>
 
     </div>
+    <div id="output"></div>
+    <button id="RRegresarrr">Regresar</button>
+    <div id="EliminaciónDeProducto" style="display: none;">
+        <label for="eliminarId">Ingrese el ID del producto que desea eliminar:</label>
+        <input type="number" id="eliminarId">
+        <button id="Eliminarrr">Eliminar</button>
+        <button id="Regresar4">Regresar</button>
+
+    </div>
+
+
+
 
 </body>
 <script src="./script.js"></script>
