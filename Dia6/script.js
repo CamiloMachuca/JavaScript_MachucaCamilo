@@ -152,7 +152,7 @@ function obtenerMenuSupplier(){// función para ver el menu de Supplier
 
 }
 
-function verSupplier(){// función para ver un supplier
+function verSupplier(){// función para ver un supplier 
     document.getElementById('output').style.display='block'
     document.getElementById('RRegresarrr').style.display='block'
     document.getElementById('menuProductsHtml2').style.display='none';
@@ -189,3 +189,4 @@ function addProduct2(){// Función para dirigirse a la función para crear un nu
     document.getElementById('Añadirr').addEventListener('click', addProduct)
     
 }
+// Proyecto Desarrollado por Camilo Machuca Vega Grupo: T2
