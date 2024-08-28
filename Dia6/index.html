@@ -29,13 +29,34 @@
         <input type="text" id="productCategory">
         <label for="productPrice">Precio:</label>
         <input type="number" id="productPrice">
-        <label for="productSupplierId">Id del proveedor:</label>
+        <label for="productQuantity">Cantidad del producto:</label>
+        <input type="number" id="productQuantity">
+        <label for="productSupplierId"> Id del proveedor</label>
         <input type="number" id="productSupplierId">
         <button id="Añadirr">Añadir</button>
         <button id="Regresar">Regresar</button>
 
     </div>
-    <div id="output"></div>
+
+
+    <div id="menuSupplierHtml"></div>
+    <div id="NuevoSupplier" style="display: none;">
+        <h1 id="titulo">Añadir nuevo Supplier</h1>
+        <label for="SupplierId">Id:</label>
+        <input type="number" id="SupplierId">
+        <label for="SupplierName">Nombre:</label>
+        <input type="text" id="SupplierName">
+        <label for="SupplierPhone">Phone:</label>
+        <input type="text" id="SupplierPhone">
+        <label for="SupplierEmail">Email:</label>
+        <input type="text" id="SupplierEmail">
+        <label for="SupplierAdress">Address:</label>
+        <input type="text" id="SupplierAdress">
+        <button id="Añadirr">Añadir</button>
+        <button id="Regresar">Regresar</button>
+
+    </div>
+    <div id="output" style="display: none;"></div>
     <button id="RRegresarrr">Regresar</button>
     <div id="EliminaciónDeProducto" style="display: none;">
         <label for="eliminarId">Ingrese el ID del producto que desea eliminar:</label>
