@@ -44,17 +44,40 @@ body{
 
 
 }
+#menuSupplierHtml2{
+    position:absolute;
+    top: 0vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30vw;
+    height: 30vw;
+    font-size: 1.5vw;
+}
+#menuSupplierHtml3{
+    position:absolute;
+    top: 0vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 30vw;
+    height: 30vw;
+    font-size: 1.5vw;
+}
 #contenedor2{
     position: relative;
     left: 35vw;
+    top: 5vw;
     background-color: #ffffff;
     border: 1px solid #ccc;
     padding: 20px;
     margin: 50px auto;
     width: 30vw;
     height: 30vw;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgb(0, 0, 0.1);
+    border-radius: 1vw;
+    box-shadow: 0px 0px 1vw rgb(0, 0, 0.1);
 }
 #contenedor2 button{
     display: block;
@@ -74,18 +97,20 @@ body{
     border: 2px solid rgb(45, 7, 181);
     color: black;
     margin: 1vw;
-    width: 70vw;
+    height: 3vw;
+    width: 75vw;
     gap: 5vw;
+    font-size: 1vw;
 
     
 }
 #RRegresarrr{
-    position: relative;
-    top: -4vw;
-    left: 80vw;
+    position: absolute;
+    top: 4vw;
+    left: 82vw;
     background-color: #1972d2;
     width: 10vw;
-    height: 2vw;
+    height: 3vw;
     color: #ffffff;
     border: none;
     font-size: 1.5vw;
@@ -123,21 +148,294 @@ body{
     text-align: center;
     width: 20vw;
     margin: 1vw;
+    font-size: 1.5vw;
+    
   
 }
 #NuevoProduct input{
     width: 20vw;
     height: 2vw;
-    margin: 2vw;
+    margin: 1vw;
+    font-size: 2vw;
 }
 #NuevoProduct label{
     position: relative;
     display: flex;
     justify-content: center;
-    left: 3vw;
+    left: 1.5vw;
+    
 } 
 #titulo{
     position: relative;
     left: -7.5vw;
     width: 40vw;
+}
+#EliminarProducto{
+    font-size: 2vw;
+    flex-direction: column;
+
+}
+#EliminarProducto input{
+    width: 5vw;
+    height: 2vw;
+    position: relative;
+    top: -0.2vw;
+    font-size: 1.5vw;
+    
+}
+#EliminarProducto button{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 7vw;
+    height: 3vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    background-color: #1972d2;
+    border: none;
+}
+
+#RegresarEliminar{
+    width: 7vw;
+    height: 3vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    background-color: #1972d2;
+    border: none;
+}
+
+#MostrarProductos2{
+    display: flex;
+    position: relative;
+    top: 0vw;
+    border: 2px solid rgb(45, 7, 181);
+    color: black;
+    margin: 1vw;
+    height: 3vw;
+    width: 78vw;
+    gap: 5vw;
+    font-size: 1vw;
+
+    
+}
+#RRegresarrr2{
+    position: absolute;
+    top: 4vw;
+    left: 82vw;
+    background-color: #1972d2;
+    width: 10vw;
+    height: 3vw;
+    color: #ffffff;
+    border: none;
+    font-size: 1.5vw;
+    border-radius: 0.5vw;
+}
+#Añadirr2{
+    position: relative;
+    left: -3vw;
+    background-color: #1972d2;
+    width: 10vw;
+    height: 2vw;
+    color: #ffffff;
+    border: none;
+    font-size: 1.5vw;
+    border-radius: 0.5vw;
+}
+#Regresar2{
+    position: relative;
+    top: -2vw;
+    left: 8vw;
+    background-color: #1972d2;
+    width: 10vw;
+    height: 2vw;
+    color: #ffffff;
+    border: none;
+    font-size: 1.5vw;
+    border-radius: 0.5vw;
+}
+#NuevoProduct2{
+    position: absolute;
+    left: 35vw;
+    top: 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20vw;
+    margin: 1vw;
+    font-size: 1.5vw;
+    
+  
+}
+#NuevoProduct2 input{
+    width: 20vw;
+    height: 2vw;
+    margin: 1vw;
+    font-size: 2vw;
+}
+#NuevoProduct2 label{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 1.5vw;
+    
+} 
+#titulo2{
+    position: relative;
+    left: -7.5vw;
+    width: 40vw;
+}
+#EliminarProducto2{
+    font-size: 2vw;
+    flex-direction: column;
+    position: absolute;
+    left: 5vw;
+    top: 0vw;
+
+}
+#EliminarProducto2 input{
+    width: 5vw;
+    height: 2vw;
+    position: relative;
+    top: -0.2vw;
+    font-size: 1.5vw;
+    
+}
+#EliminarProducto2 button{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 7vw;
+    height: 3vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    background-color: #1972d2;
+    border: none;
+}
+
+#RegresarEliminar2{
+    width: 7vw;
+    height: 3vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    background-color: #1972d2;
+    border: none;
+}
+
+#MostrarProductos3{
+    display: flex;
+    position: relative;
+    top: 0vw;
+    border: 2px solid rgb(45, 7, 181);
+    color: black;
+    margin: 1vw;
+    height: 3vw;
+    width: 70vw;
+    gap: 5vw;
+    font-size: 1vw;
+
+    
+}
+#RRegresarrr3{
+    position: absolute;
+    top: 4vw;
+    left: 82vw;
+    background-color: #1972d2;
+    width: 10vw;
+    height: 3vw;
+    color: #ffffff;
+    border: none;
+    font-size: 1.5vw;
+    border-radius: 0.5vw;
+}
+#Añadirr3{
+    position: relative;
+    left: -3vw;
+    background-color: #1972d2;
+    width: 10vw;
+    height: 2vw;
+    color: #ffffff;
+    border: none;
+    font-size: 1.5vw;
+    border-radius: 0.5vw;
+}
+#Regresar3{
+    position: relative;
+    top: -2vw;
+    left: 8vw;
+    background-color: #1972d2;
+    width: 10vw;
+    height: 2vw;
+    color: #ffffff;
+    border: none;
+    font-size: 1.5vw;
+    border-radius: 0.5vw;
+}
+#NuevoProduct3{
+    position: absolute;
+    left: 35vw;
+    top: 0vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 20vw;
+    margin: 1vw;
+    font-size: 1.5vw;
+    
+  
+}
+#NuevoProduct3 input{
+    width: 20vw;
+    height: 2vw;
+    margin: 1vw;
+    font-size: 2vw;
+}
+#NuevoProduct3 label{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    left: 1.5vw;
+    
+} 
+#titulo3{
+    position: relative;
+    left: -7.5vw;
+    width: 40vw;
+}
+#EliminarProducto3{
+    font-size: 2vw;
+    flex-direction: column;
+    position: absolute;
+    left: 5vw;
+    top: 0vw;
+
+}
+#EliminarProducto3 input{
+    width: 5vw;
+    height: 2vw;
+    position: relative;
+    top: -0.2vw;
+    font-size: 1.5vw;
+    
+}
+#EliminarProducto3 button{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 7vw;
+    height: 3vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    background-color: #1972d2;
+    border: none;
+}
+
+#RegresarEliminar3{
+    width: 7vw;
+    height: 3vw;
+    border-radius: 1vw;
+    font-size: 1vw;
+    background-color: #1972d2;
+    border: none;
 }
