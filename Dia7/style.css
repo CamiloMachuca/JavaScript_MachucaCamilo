@@ -1,0 +1,44 @@
+
+.casilla{
+    width: 5vw;
+    height: 3vw;
+    font-size: 1.5vw;
+}
+.CuadroBoton{
+    position: relative;
+    top: 2vw;
+   display: flex;
+   justify-content: center;
+}
+#resultado{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    gap: 2vw;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+ 
+}
+#datoss{
+    position: relative;
+    top: 5vw;
+    left: 30vw;
+    font-family: monospace;
+    font-size: 1vw;
+    width: 50vw;
+}
+.contenedor{
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    background-color: rgb(182, 188, 194);
+    width: 100vw;
+    height: 100vw;
+}
+#enviar{
+    width: 10vw;
+    height: 3vw;
+  
+    font-size: 1vw;
+
+}
