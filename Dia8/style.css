@@ -1,9 +1,9 @@
 #tablados{
     position: relative;
-    left: 0vw;
-    top: 1vw;
+    width: 61vw;
     border-radius: 0.5vw;
     overflow: hidden;
+    margin: 0.4vw ;
 }
 
 #tablados2{
@@ -12,11 +12,14 @@
     top: 0.5vw;
     margin: 0vw;
 }
-
-
-.table-borderedondo{
+#tablados3{
+    margin: 0vw;
+}
+#filmsContenedor{
     border-radius: 0.5vw;
     overflow: hidden;
+    height: auto;
+    margin: 0.4vw;
 }
 
 .CuadroBoton{
@@ -25,10 +28,21 @@
     width: 99vw;
     position: relative;
     top: 1vw;
-    
     left: -15.5vw;
 }
 #TablaPrincipal{
     position: relative;
     top: 2vw;
+}
+#contenedorVehicles{
+    border-radius: 0.5vw;
+    overflow: hidden;
+    height: auto;
+    margin: 0.4vw;
+}
+#contenedorStarships{
+    border-radius: 0.5vw;
+    overflow: hidden;
+    height: auto;
+    margin: 0.4vw;
 }

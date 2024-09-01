@@ -1,19 +1,19 @@
 
-document.getElementById('enviar').addEventListener('click', function () {
+document.getElementById('enviar').addEventListener('click', function () {// función para buscar la perosna por su id 
     const id = document.getElementById('idbusqueda').value;
 
-    fetch(`https://swapi.py4e.com/api/people/${id}`)
+    fetch(`https://swapi.py4e.com/api/people/${id}`)//Se accede a los datos de esa persona 
     .then(Response => Response.json())
     .then(Data => {
-        var uurl= Data.homeworld
-        var urrllm= Data.films
-        var urlEspecie=Data.species
-        var urlVehicles=Data.vehicles
-        var urlStarships=Data.starships
+        var uurl= Data.homeworld// Se guarda el url de homeworld
+        var urrllm= Data.films// Se guardan los url de films
+        var urlEspecie=Data.species// Se guardan los url de films
+        var urlVehicles=Data.vehicles// Se guardan los url de films
+        var urlStarships=Data.starships// Se guardan los url de films
         
-        fetch(uurl)
+        fetch(uurl)//Se accede a los datos de la url de homeworld
         .then(Response => Response.json())
-        .then(Dataaa => {
+        .then(Dataaa => {// Se ordenan los datos y se guardan en una variable para luego mostrarla 
             
             let datosOrdenados = `
             
@@ -35,20 +35,22 @@ document.getElementById('enviar').addEventListener('click', function () {
             </tr>
         
             <tr class="table-dark">
-            <th scope:"row">Hair_color:</th>
+            <th scope:"row">Hair color:</th>
             <td scope="col">${Data.hair_color}</td>
+            </tr>
+
+            <tr class="table-dark">
+            <th scope:"row">Eye color:</th>
+            <td scope="col">${Data.eye_color}</td>
             </tr>
         
             <tr class="table-dark">
-            <th scope:"row">Skin_color:</th>
+            <th scope:"row">Skin color:</th>
             <td scope="col">${Data.skin_color}</td>
             </tr>
+            
             <tr class="table-dark">
-            <th scope:"row">Eye_color:</th>
-            <td scope="col">${Data.eye_color}</td>
-            </tr>
-            <tr class="table-dark">
-            <th scope:"row">Birth_year:</th>
+            <th scope:"row">Birth year:</th>
             <td scope="col">${Data.birth_year}</td>
             </tr>
             <tr class="table-dark">
@@ -60,18 +62,18 @@ document.getElementById('enviar').addEventListener('click', function () {
             <td scope="col">
             <table class="table borderedondo" id="tablados">
             <td scope="col">
-            <p>name: ${Dataaa.name}</p>
-            <p>rotation_period: ${Dataaa.rotation_period}</p>
-            <p>orbital_period: ${Dataaa.orbital_period}</p>
-            <p>diameter: ${Dataaa.diameter}</p>
-            <p>climate: ${Dataaa.climate}</p>
-            <p>gravity: ${Dataaa.gravity}</p>
-            <p>terrain: ${Dataaa.terrain}</p>
-            <p>surface_water: ${Dataaa.surface_water}</p>
-            <p>population: ${Dataaa.population}</p>
-            <p>created: ${Dataaa.created}</p>
+            <p>Name: ${Dataaa.name}</p>
+            <p>Rotation period: ${Dataaa.rotation_period}</p>
+            <p>Orbital period: ${Dataaa.orbital_period}</p>
+            <p>Diameter: ${Dataaa.diameter}</p>
+            <p>Climate: ${Dataaa.climate}</p>
+            <p>Gravity: ${Dataaa.gravity}</p>
+            <p>Terrain: ${Dataaa.terrain}</p>
+            <p>Surface water: ${Dataaa.surface_water}</p>
+            <p>Population: ${Dataaa.population}</p>
+            <p>Created: ${Dataaa.created}</p>
             <p>Edited: ${Dataaa.edited}</p>
-            <p>url: ${Dataaa.url}</p>
+            <p>Url: ${Dataaa.url}</p>
             </td>
             </table>
             </td>
@@ -80,7 +82,7 @@ document.getElementById('enviar').addEventListener('click', function () {
             <tr class="table-dark">
             <td scope:"row"><strong>films:</strong>
             <td scope="col">
-            <div id="filmsContenedor"></div>
+            <div class="contenedorrr" id="filmsContenedor"></div>
             </td>
             </td>
             </tr>
@@ -127,25 +129,25 @@ document.getElementById('enviar').addEventListener('click', function () {
         </table>
 
     `
-    document.getElementById('datoss').innerHTML = datosOrdenados
+    document.getElementById('datoss').innerHTML = datosOrdenados// Se imprimen los datos ordenados 
 
-    urrllm.forEach(urllm => {
+    urrllm.forEach(urllm => {// Funcion para acceder a los datos de cada url que este almacenada en la variable urrllm
         fetch(urllm)
         .then(Response=> Response.json())
         .then(Dataaa2=>{
             let nuevosDatos =`
             
-            <table class="table" id="tablados2">
+            <table class="table" id="tablados3">
             <td scope="col">
             <p>Name: ${Dataaa2.title}</p>
-            <p>Episode_id: ${Dataaa2.episode_id}</p>
-            <p>opening_crawl: ${Dataaa2.opening_crawl}</p>
-            <p>director: ${Dataaa2.director}</p>
-            <p>producer: ${Dataaa2.producer}</p>
-            <p>release_date: ${Dataaa2.release_date}</p>
-            <p>created: ${Dataaa2.created}</p>
-            <p>edited: ${Dataaa2.edited}</p>
-            <p>url: ${Dataaa2.url}</p>
+            <p>Episode id: ${Dataaa2.episode_id}</p>
+            <p>Opening crawl: ${Dataaa2.opening_crawl}</p>
+            <p>Director: ${Dataaa2.director}</p>
+            <p>Producer: ${Dataaa2.producer}</p>
+            <p>Release date: ${Dataaa2.release_date}</p>
+            <p>Created: ${Dataaa2.created}</p>
+            <p>Edited: ${Dataaa2.edited}</p>
+            <p>Url: ${Dataaa2.url}</p>
             </td>
             </table>
 
@@ -154,7 +156,7 @@ document.getElementById('enviar').addEventListener('click', function () {
 
         })
         });
-        fetch(urlEspecie)
+        fetch(urlEspecie)// se extrae los datos de la url que se encuentra dentro de la variable urlEspecie 
         .then(Response=> Response.json())
         .then(Dataa3=>{
             let datosSpecies=`
@@ -179,13 +181,13 @@ document.getElementById('enviar').addEventListener('click', function () {
             document.getElementById('speciesContenedor').innerHTML+=datosSpecies;
 
         })
-        urlVehicles.forEach(Vehicles => {
+        urlVehicles.forEach(Vehicles => {// Funcion para acceder a los datos de cada url que este almacenada en la variable urlVehicles
             fetch(Vehicles)
             .then(Response=> Response.json())
             .then(Dataa4=>{
                 let DatosVehicles =`
                 
-                <table class="table" id="tablados2">
+                <table class="table" id="tablados3">
                 <td scope="col">
                 <p>Name: ${Dataa4.name}</p>
                 <p>Model: ${Dataa4.model}</p>
@@ -210,13 +212,13 @@ document.getElementById('enviar').addEventListener('click', function () {
     
             })
             });
-            urlStarships.forEach(Starships => {
+            urlStarships.forEach(Starships => {// Funcion para acceder a los datos de cada url que este almacenada en la variable urlStarships
                 fetch(Starships)
                 .then(Response=> Response.json())
                 .then(Dataa5=>{
                     let DatosStarships =`
                     
-                    <table class="table" id="tablados2">
+                    <table class="table" id="tablados3">
                     <td scope="col">
                     <p>Name: ${Dataa5.name}</p>
                     <p>Model: ${Dataa5.model}</p>
@@ -249,4 +251,5 @@ document.getElementById('enviar').addEventListener('click', function () {
     })
 })
 })
+//Progama desarrollado por Camilo Machuca Vega Grupo:T2
         
