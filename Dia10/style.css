@@ -1,0 +1,101 @@
+@font-face {
+    font-family: fuente;
+    src: url(waltograph42.ttf);
+}
+
+.contenedor{
+    position: relative;
+    top: -6vw;
+    margin: -1vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 55vw;
+}
+.CuadroBoton{
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -7vw;
+    height: 1.5vw;
+
+}
+#datoss{
+    font-size: 2vw;
+    color: aliceblue ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: fuente;
+    position: relative;
+    left: 30vw;
+    top: 6vw;
+    height: 34vw;
+    
+}
+#imagen{
+    width: 30vw;
+    height: 30vw;
+    mask-image: linear-gradient(
+        black 80%, 
+        transparent
+    );
+    border-radius: 1vw;
+}
+
+.boton1{
+    background-color: rgb(72, 118, 247);
+    border: 2px solid rgb(72, 118, 247);
+    border-radius: 0.2vw;
+    color: blue;
+}
+.casilla{
+    border-radius: 1vw;
+    border:azure;
+}
+.contenedor2{
+    width: 100vw;
+    height:100vh;
+    background-color: black;
+    
+}
+#videoo{
+    width: 100%;
+}
+#Titulo{
+    color: azure;
+    font-size: 4vw;
+    font-family: fuente;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 7vw;
+    
+}
+#Idd{
+    position: relative;
+    left: -50vw;
+    top: -30vw;
+}
+#Personajes{
+    position: relative;
+    left: -50vw;
+    top: -30vw;
+}
+#Create{
+    position: relative;
+    left: -50vw;
+    top: -30vw;
+}
+#VideoGames{
+    position: relative;
+    left: -50vw;
+    top: -30vw;
+}
+#Cortos{
+    position: relative;
+    left: -50vw;
+    top: -30vw;
+}
