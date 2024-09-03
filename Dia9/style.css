@@ -31,6 +31,7 @@ body{
     position: relative;
     font-family: 'Oxanium', cursive;
     font-size: 1.2vw;
+    border-radius: 0.1vw;
     
 }
 .casilla{
@@ -40,14 +41,14 @@ body{
     height: 2.5vw;
     width: 15vw;
     border-radius: 0.5vw;
-    border:2px solid #787777;
+    border:2px solid #181717;
     font-size: 1vw;
     font-family: 'Oxanium', cursive;
 
 
 }
 .casilla2{
-    border:2px solid #787777;
+    border:2px solid #222222;
     border-radius: 0.5vw;
     position: relative;
     top: -19.9vw;
@@ -55,11 +56,12 @@ body{
     height: 2.5vw;
     width: 15vw;
     opacity: 0.8;
+    background-color: #c4c4c9;
     box-shadow: 2px 2px 0px #4a4a4a;
 }
 #datoss{
     position: relative;
-    top: -22vw;
+    top: -23vw;
     font-size: 1.4vw;
     width: 12vw;
     height: 2vw;
@@ -80,11 +82,11 @@ body{
 #anterior{
     width: 10vw;
     height: 2.7vw;
-    box-shadow: -2px 1px 2px 2px #111, 0px 2px 2px #555;
+    box-shadow: -4px 4px 2px 2px #111, 0px 2px 2px #555;
 }
 #siguiente{
     width: 10vw;
     height: 2.7vw;
-    box-shadow: -2px 1px 2px 2px #111, 0px 2px 2px #555;
+    box-shadow: -4px 4px 2px 2px #111, 0px 2px 2px #555;
 
 }

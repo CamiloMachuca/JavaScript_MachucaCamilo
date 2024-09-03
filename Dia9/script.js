@@ -10,7 +10,7 @@ function mostrarPokemon(){
             let datoss=`
             <img id="imagenn" src="${Data.sprites.other.showdown.front_default}" alt="">
             <p><span id="color">${Data.id}-</span>${Data.name}</p>
-            
+            <audio src="${Data.cries.latest}" autoplay></audio>
         
             `
             document.getElementById('datoss').innerHTML = datoss// Se imprimen los datos ordenados 
@@ -32,3 +32,4 @@ document.getElementById('anterior').addEventListener('click', function () {// fu
     mostrarPokemon();
 })
 mostrarPokemon()// Se muestra la funcion con los cambios pertinentes ya sea aumentar o disminuir el id o mostrar simplemente el id deseado
+// Programa desarrollado por Camilo Machuca Vega 
