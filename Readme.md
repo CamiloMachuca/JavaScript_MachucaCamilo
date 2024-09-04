@@ -108,6 +108,8 @@ Este programa muestra información de las peliculas en las cuales estan:
 - JavaScript
 - Html
 - Css
+## Estructura del proyecto
+![alt text](<imagenes/Captura de pantalla 2024-09-03 200516.png>)
 
 ## Características
 - Archivos [Dia]: Estos contienen el código principal.
