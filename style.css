@@ -1,0 +1,40 @@
+
+body{
+    background-image: url(imagenes/fondo-futurista-degradado_23-2149117231.avif);
+}
+button{
+    border-radius: 0.5vw;
+    background-color: rgba(24, 76, 245, 0.514);
+    width: 12vw;
+    height: 4vw;
+    color: brown;
+    font-size: 2vw;
+    border:solid 4px rgb(247, 247, 247) ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+button:hover{
+    width: 15vw;
+    height: 5vw;
+}
+.contenedor{
+    position: relative;
+
+    margin: 5vw;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    gap: 5vw;
+    flex-direction: column;
+    
+}
+#Titulo{
+    position: relative;
+    color: rgb(0, 0, 0);
+    font-size: 3vw;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration-line: none;
+    color: #fff;
+}
