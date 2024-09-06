@@ -1,36 +1,37 @@
+@font-face {
+    font-family: fuente;
+    src: url(./imagenes/accord-alternate-regular.otf);
+}
+
 .contenedor{
     display: flex;
     justify-content: center;
-    margin: -1vw;
     background-color: #f9f9f9;
     width: 50vw;
-    border: solid 2px #d4d4d4;
-    height: 10vw;
+    border: solid 1px #d4d4d4;
+    height: 14vw;
 }
 .contenedor2{
     background-color:#fff;
     width: 50vw;
-    height: 20vw;
-    border: solid 2px #d4d4d4;
-
-    margin: -1vw;
+    height: 22vw;
 }
 .circuloImagen{
     display: flex;
     justify-content: center;
     text-align: center;
     border-radius: 50vw;
-    width: 15vw;
-    height: 15vw;
-    border: solid 2px #d4d4d4;
+    width: 16vw;
+    height: 16vw;
+    border: solid 1px #d4d4d4;
     position: relative;
-    top: 1vw;
+    top: 2vw;
     
 
 }
 .contenedorFondo{
     width: 100vw;
-    height: 25vw;
+    height: 25.5vw;
     background-color: black;
     margin: -1vw;
 }
@@ -38,143 +39,182 @@
     position: relative;
     width: 100vw;
     height: 26vw;
-    background-color: #fff;
+    background-color: #f9f9f9;
     margin: -1vw;
 }
 .contenido{
     position: absolute;
     left: 25vw;
-    top: 10vw;
-}
-#imagen1{
-    position: relative;
-    top: -2.5vw;
-    width: 3vw;
-    height: 5vw;
-    transition: 0.5s;
-}
-#imagen1:hover{
-    position: relative;
-    top: 0.4vw;
-    width: 3vw;
-    height: 4vw;
+    top: 7vw;
 }
 
-#imagen2{
-    position: relative;
-    top: -2.5vw;
-    width: 3vw;
-    height: 5vw;
-    transition: 0.5s;
-}
-#imagen2:hover{
+.imagen{
     position: relative;
     top: 0.4vw;
-    width: 3vw;
-    height: 4vw;
-}
-#imagen3{
-    position: relative;
-    top: -2.5vw;
-    width: 3vw;
-    height: 5vw;
+    width: 4.2vw;
+    height: 7.5vw;
     transition: 0.5s;
 }
-#imagen3:hover{
+.imagenVerde{
     position: relative;
-    top: 0.4vw;
-    width: 3vw;
-    height: 4vw;
+    top: -3vw;
+    width: 4.2vw;
+    height: 7.5vw;
 }
-#imagen4{
-    position: relative;
-    top: -2.5vw;
-    width: 3vw;
-    height: 5vw;
-    transition: 0.5s;
-}
-#imagen4:hover{
-    position: relative;
-    top: 0.4vw;
-    width: 3vw;
-    height: 4vw;
-}
-#imagen5{
-    position: relative;
-    top: -2.5vw;
-    width: 3vw;
-    height: 5vw;
-    transition: 0.5s;
-}
-#imagen5:hover{
-    position: relative;
-    top: 0.4vw;
-    width: 3vw;
-    height: 4vw;
-}
-#imagen6{
-    position: relative;
-    top: -2.5vw;
-    width: 3vw;
-    height: 5vw;
-    transition: 0.5s;
-}
-#imagen6:hover{
-    position: relative;
-    top: 0.4vw;
-    width: 3vw;
-    height: 4vw;
-}
+
 
 .contenidoBotones{
     display: flex;
     position: relative;
     align-items: center;
     justify-content: center;
-    top: 13vw;
+    top: 15vw;
     gap: 2vw;
 }
 #boton1{
-    height: 3vw;
-    width: 3vw;
+    height: 4vw;
+    width: 4vw;
     overflow: hidden;
 }
 #boton2{
-    height: 3vw;
-    width: 3vw;
+    height: 4vw;
+    width: 4vw;
     overflow: hidden;
 }
 #boton3{
-    height: 3vw;
-    width: 3vw;
+    height: 3.7vw;
+    width: 4vw;
     overflow: hidden;
 }
 #boton4{
-    height: 3vw;
-    width: 3vw;
+    height: 4vw;
+    width: 4vw;
     overflow: hidden;
 }
 #boton5{
-    height: 3vw;
-    width: 3vw;
+    height: 4vw;
+    width: 4vw;
     overflow: hidden;
 }
 #boton6{
-    height: 3vw;
-    width: 3vw;
+    height: 4vw;
+    width: 4vw;
     overflow: hidden;
 }
 #mostrarDatos{
-    top: 15vw;
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    top: 18vw;
     position: absolute;
-    left: 14vw;
-    width: 20vw;
-    height: 6vw;
-    font-size: 2vw;
+    width: 50vw;
+    height: 7vw;
+    font-size: 1.5vw;
+    font-family: fuente;
 }
+#mostrarDatos b{
+    font-size: 2vw;
+    font-family: fuente;
 
+}
+#mostrarDatos2{
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    top: 18vw;
+    position: absolute;
+    width: 50vw;
+    height: 7vw;
+    font-size: 1.5vw;
+    font-family: fuente;
+
+}
+#mostrarDatos2 b{
+    font-size: 2vw;
+    font-family: fuente;
+
+}
+#mostrarDatos3{
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    top: 18vw;
+    position: absolute;
+    width: 50vw;
+    height: 7vw;
+    font-size: 1.5vw;
+    font-family: fuente;
+
+}
+#mostrarDatos3 b{
+    font-size: 2vw;
+    font-family: fuente;
+
+}
+#mostrarDatos4{
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    top: 18vw;
+    position: absolute;
+    width: 50vw;
+    height: 7vw;
+    font-size: 1.5vw;
+    font-family: fuente;
+
+}
+#mostrarDatos4 b{
+    font-size: 2vw;
+    font-family: fuente;
+
+}
+#mostrarDatos5{
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    top: 18vw;
+    position: absolute;
+    width: 50vw;
+    height: 7vw;
+    font-size: 1.5vw;
+    font-family: fuente;
+
+}
+#mostrarDatos5 b{
+    font-size: 2vw;
+    font-family: fuente;
+
+}
+#mostrarDatos6{
+    overflow: hidden;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    top: 18vw;
+    position: absolute;
+    width: 50vw;
+    height: 7vw;
+    font-size: 1.5vw;
+    font-family: fuente;
+
+}
+#mostrarDatos6 b{
+    font-size: 2vw;
+    font-family: fuente;
+
+}
 #imagennn{
+    position: relative;
+    top: 1.5%;
     border-radius: 50vw;
     width: 15vw;
     height: 15vw;
+}
+p{
+    color: #999999;
 }
