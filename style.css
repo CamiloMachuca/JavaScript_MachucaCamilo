@@ -1,6 +1,8 @@
 
 body{
-    background-image: url(imagenes/fondo-futurista-degradado_23-2149117231.avif);
+    background-image: url(imagenes/6106991.jpg);
+    width: 100vw;
+    height: 105vw;
 }
 button{
     border-radius: 0.5vw;
@@ -15,6 +17,8 @@ button{
 button:hover{
     width: 15vw;
     height: 5vw;
+    background-color: rgba(5, 32, 119, 0.845);
+
 }
 .contenedor{
     position: relative;
@@ -29,14 +33,355 @@ button:hover{
 }
 #Titulo{
     position: relative;
-    color: rgb(0, 0, 0);
+    color: white;
     font-size: 3vw;
     text-align: center;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: tituloo 2s infinite;
+}
+@keyframes tituloo{
+    0%,20%,50%,80%,100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-20px);
+    }
+    60%{
+        transform: translateY(-10px);
+    }
 }
 a{
     text-decoration-line: none;
     color: #fff;
 
+    
+}
+#imagen1{
+    position: relative;
+    left: 10vw;
+    width: 15vw;
+    height: 10vw;
+    border-radius: 1vw;
+    border: 4px solid rgba(24, 76, 245, 0.826);
+    animation: imaagen 2s forwards;
+
+
+}
+#mostrarDatos{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 61vw;
+    width: 38vw;
+    height: 6vw;
+    top: 9vw;
+    overflow: hidden;
+    border: 3px solid rgba(24, 76, 245, 0.826);
+    background-color: rgb(31, 58, 147);
+    transform: skew(20deg);
+    
+}
+#mostrarDatosImagen{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15vw;
+    width: 30vw;
+    height: 10vw;
+    top: 7vw;
+    overflow: hidden;
+    
+}
+
+
+@keyframes imaagen{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+#Texto{
+    color: white;
+    font-size: 1.5vw;
+    font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+    animation: texxto 2s forwards;
+}
+@keyframes texxto{
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+#mostrarDatos3{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 61vw;
+    width: 38vw;
+    height: 6vw;
+    top: 18vw;
+    overflow: hidden;
+    border: 3px solid rgba(24, 76, 245, 0.826);
+    background-color: rgb(31, 58, 147);
+    transform: skew(20deg);
+}
+#mostrarDatosImagen3{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15vw;
+    width: 30vw;
+    height: 10vw;
+    top: 16vw;
+    overflow: hidden;
+    
+}
+#mostrarDatos3 #Texto{
+    color: white;
+}
+#mostrarDatos4{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 61vw;
+    width: 38vw;
+    height: 6vw;
+    top: 27vw;
+    overflow: hidden;
+    border: 3px solid rgba(24, 76, 245, 0.826);
+    background-color: rgb(31, 58, 147);
+    transform: skew(20deg);
+    
+}
+#mostrarDatosImagen4{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15vw;
+    width: 30vw;
+    height: 10vw;
+    top: 25vw;
+    overflow: hidden;
+    
+}
+#mostrarDatos4 #Texto{
+    color: white;
+}
+#mostrarDatos5{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 61vw;
+    width: 38vw;
+    height: 6vw;
+    top: 36.5vw;
+    overflow: hidden;
+    border: 3px solid rgba(24, 76, 245, 0.826);
+    background-color: rgb(31, 58, 147);
+    transform: skew(20deg);
+    
+}
+#mostrarDatosImagen5{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15vw;
+    width: 30vw;
+    height: 10vw;
+    top: 34vw;
+    overflow: hidden;
+    
+}
+#mostrarDatos6{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 61vw;
+    width: 38vw;
+    height: 6vw;
+    top: 45.2vw;
+    overflow: hidden;
+    border: 3px solid rgba(24, 76, 245, 0.826);
+    background-color: rgb(31, 58, 147);
+    transform: skew(20deg);
+
+}
+#mostrarDatosImagen6{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15vw;
+    width: 30vw;
+    height: 10vw;
+    top: 43.5vw;
+    overflow: hidden;
+    
+}
+#mostrarDatos7{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 61vw;
+    width: 38vw;
+    height: 6vw;
+    top: 54vw;
+    overflow: hidden;
+    border: 3px solid rgba(24, 76, 245, 0.826);
+    background-color: rgb(31, 58, 147);
+    transform: skew(20deg);
+    
+}
+#mostrarDatosImagen7{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15vw;
+    width: 30vw;
+    height: 10vw;
+    top: 53vw;
+    overflow: hidden;
+    
+}
+#mostrarDatos8{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 61vw;
+    width: 38vw;
+    height: 6vw;
+    top: 63vw;
+    overflow: hidden;
+    border: 3px solid rgba(24, 76, 245, 0.826);
+    background-color: rgb(31, 58, 147);
+    transform: skew(20deg);
+    
+}
+#mostrarDatosImagen8{
+    
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15vw;
+    width: 30vw;
+    height: 10vw;
+    top: 61vw;
+    overflow: hidden;
+    
+}
+#mostrarDatos9{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 61vw;
+    width: 38vw;
+    height: 6vw;
+    top: 72.5vw;
+    overflow: hidden;
+    border: 3px solid rgba(24, 76, 245, 0.826);
+    background-color: rgb(31, 58, 147);
+    transform: skew(20deg);
+    
+}
+#mostrarDatosImagen9{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15vw;
+    width: 30vw;
+    height: 10vw;
+    top: 70vw;
+    overflow: hidden;
+    
+}
+#mostrarDatos10{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 61vw;
+    width: 38vw;
+    height: 6vw;
+    top: 81vw;
+    overflow: hidden;
+    border: 3px solid rgba(24, 76, 245, 0.826);
+    background-color: rgb(31, 58, 147);
+    transform: skew(20deg);
+    
+}
+#mostrarDatosImagen10{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15vw;
+    width: 30vw;
+    height: 10vw;
+    top: 79vw;
+    overflow: hidden;
+    
+}
+#mostrarDatos11{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 61vw;
+    width: 38vw;
+    height: 6vw;
+    top: 90vw;
+    overflow: hidden;
+    border: 3px solid rgba(24, 76, 245, 0.826);
+    background-color: rgb(31, 58, 147);
+    transform: skew(20deg);
+    
+}
+#mostrarDatosImagen11{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15vw;
+    width: 30vw;
+    height: 10vw;
+    top: 88vw;
+    overflow: hidden;
+    
+}
+#mostrarDatos12{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 61vw;
+    width: 38vw;
+    height: 6vw;
+    top: 99vw;
+    overflow: hidden;
+    border: 3px solid rgba(24, 76, 245, 0.826);
+    background-color: rgb(31, 58, 147);
+    transform: skew(20deg);
+    
+}
+#mostrarDatosImagen12{
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 15vw;
+    width: 30vw;
+    height: 10vw;
+    top: 97vw;
+    overflow: hidden;
     
 }
