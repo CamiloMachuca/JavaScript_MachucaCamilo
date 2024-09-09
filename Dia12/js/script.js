@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     async function fetchData() {
-        const res = await fetch('https://6674179975872d0e0a950e53.mockapi.io/todoList')
+        const res = await fetch('https://66df3395de4426916ee3df65.mockapi.io/tareas/tareas')
         data = await res.json();
         return data;
 
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     <div class="terminado">
                         <img src="./storage/img/pngwing.com (2).png" data-id="${cap.id}" class="completado">
                     </div>
-                    <div class="eliminadonegativo">
+                    <div class="eliminado">
                         <img src="./storage/img/pngwing.com (4).png" data-id="${cap.id}" class="eliminado">
 
                     </div>
@@ -56,9 +56,66 @@ document.addEventListener('DOMContentLoaded', () => {
             }
             datosContenedor.appendChild(capDiv)
         });
+        document.querySelectorAll('.completado').forEach(button=>{
+            button.addEventListener('click', botoncompletado);
+        })
+        document.querySelectorAll('.eliminado').forEach(button=>{
+            button.addEventListener('click', botonEliminar);
+        })
     }
-    fetchData().then(data =>{
+    async function addNewTask() {
+        const task = taskInput.value;
+        if(task.trim()=== ''){
+            return;
+        }
+        await fetch('https://66df3395de4426916ee3df65.mockapi.io/tareas/tareas',{
+            method: 'POST',
+            headers:{
+                'Content-Type': 'application/json',
+
+            },
+            body:JSON.stringify({task,status:'On hold'})
+        });
+        taskInput.value='';
+        const data =await fetchData();
         displayCapsula(data);
+        
+    }
+
+    addTaskButton.addEventListener('click',addNewTask);
+    async function botoncompletado(event){
+        const id=event.target.getAttribute('data-id');
+        await fetch(`https://66df3395de4426916ee3df65.mockapi.io/tareas/tareas/${id}`,{
+            method:'PUT',
+            headers:{
+                'Content-Type': 'application/json',
+            },
+            body:JSON.stringify({status:'ready'})
+        });
+        const data= await fetchData();
+        displayCapsula(data)
+    }
+    addTaskButton.addEventListener('click',addNewTask);
+    async function botonEliminar(event){
+        const id=event.target.getAttribute('data-id');
+        await fetch(`https://66df3395de4426916ee3df65.mockapi.io/tareas/tareas/${id}`,{
+            method:'DELETE',
+            headers:{
+                'Content-Type': 'application/json',
+            },
+            body:JSON.stringify({status:'ready'})
+        });
+        const data= await fetchData();
+        displayCapsula(data)
+    }
+
+
+
+
+    fetchData().then(data =>{
+        console.log(data);
         displayCapsula(data);
     })
+
 })
+

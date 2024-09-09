@@ -103,6 +103,14 @@ Este programa muestra información de las peliculas en las cuales estan:
 2. cortos
 3. Actores 
 4. Imagen de la pelicula
+# Dia11
+Se realizó una pagina para consumir una API sobre datos de personas
+## Descripción
+Este programa muestra información de las personas en las cuales estan:
+1. Nombre
+2. Dirección
+3. Fecha de cumpleaños
+4. Imagen de la persona
 
 # Tecnologías utilizadas 
 - JavaScript
